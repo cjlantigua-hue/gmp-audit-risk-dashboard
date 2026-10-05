@@ -25,20 +25,26 @@ A GMP audit is a structured review of a drug manufacturer's facilities, processe
 - **Note on "Other" vs "Minor":** the EU's official term is "Other." Many companies and auditors call this tier "Minor," so the two usually mean the same level. FDA doesn't grade individual observations this way; it classifies the overall inspection outcome (NAI / VAI / OAI).
 
 ## Key 21 CFR 211 sections
-- **211.22:** Quality control unit responsibilities and authority.
-- **211.25:** Personnel must be trained and qualified for their jobs.
-- **211.42:** Facility design and construction must support clean, orderly operations.
-- **211.67:** Equipment cleaning and maintenance must follow written procedures.
-- **211.68:** Automated and computerized systems must be controlled and checked.
-- **211.84:** Incoming components must be tested or examined before use.
-- **211.100:** Production must follow written procedures; deviations must be recorded and justified.
-- **211.113:** Controls to prevent microbial contamination.
-- **211.160:** Lab controls must be scientifically sound.
-- **211.165:** Each batch must be tested and meet specs before release.
-- **211.166:** A written stability program supports expiry dating.
-- **211.192:** Batch records must be reviewed; unexplained discrepancies must be investigated.
-- **211.198:** Complaints must be documented and reviewed.
-
+- **211.22:** The quality control unit has the authority to approve or reject materials, procedures, and batches, and must have its responsibilities written down.
+- **211.25:** Personnel must have the education, training, and experience needed for their jobs, including ongoing GMP training.
+- **211.42:** Facilities must be designed and laid out to support clean, orderly operations and prevent mix-ups and contamination.
+- **211.58:** Buildings must be kept clean and in good repair.
+- **211.67:** Equipment must be cleaned, maintained, and sanitized on a schedule using written procedures, with records kept.
+- **211.68:** Automated, mechanical, and computerized systems must be routinely checked and controlled so data and outputs are reliable.
+- **211.80:** Incoming components, containers, and closures must be received, identified, stored, and handled under written procedures that prevent contamination and track each lot's status.
+- **211.84:** Incoming components must be sampled and tested or examined, then approved or rejected before use.
+- **211.100:** Production must follow written, approved procedures; any deviation must be recorded and justified.
+- **211.110:** In-process materials must be sampled and tested during production to confirm the process stays in control.
+- **211.125:** Label issuance must be tightly controlled, and quantities issued, used, and returned must be reconciled.
+- **211.130:** Packaging and labeling operations must follow written procedures that prevent mix-ups, including line clearance before each run.
+- **211.160:** Laboratory controls (specs, methods, sampling plans) must be scientifically sound and documented.
+- **211.165:** Each batch must be tested and meet its specifications before it can be released.
+- **211.166:** A written stability testing program must support each product's storage conditions and expiration date.
+- **211.180:** Records must be retained for a set period and be available for inspection; this section also requires an annual product quality review.
+- **211.188:** Every batch needs a complete production and control record documenting each significant step.
+- **211.192:** Batch records must be reviewed by QA before release, and any unexplained discrepancy or failure must be investigated.
+- **211.194:** Laboratory records must contain complete data from every test, including methods, raw data, calculations, results, and reviewer sign-off.
+- **211.198:** Complaints must be handled under written procedures, reviewed, and investigated when needed.
 ## Quality risk management (ICH Q9(R1))
 ICH Q9(R1) describes a systematic way to assess, control, communicate, and review risks to product quality across the product lifecycle. It defines risk as the combination of the probability that harm occurs and the severity of that harm, which is the basis for this project's Phase 3 scoring formula. The 2023 revision adds guidance on reducing subjectivity, matching the level of formality to the level of risk, and considering product availability.
 
