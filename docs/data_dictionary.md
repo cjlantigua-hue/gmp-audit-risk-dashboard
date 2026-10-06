@@ -53,7 +53,7 @@ One row per finding raised during an audit.
 | finding_id | text | PK | F00001, F00002, … |
 | audit_id | text | FK → audits | Audit that raised the finding |
 | process_area | text | | One of the six FDA inspection systems |
-| category | text | | See Section 4 category table |
+| category | text | | See Section 4.3 |
 | cfr_reference | text | | 21 CFR 211 citation matching the category |
 | severity | text | | Critical, Major, Minor |
 | description | text | | Free-text finding statement |
@@ -149,7 +149,7 @@ Statuses move in this order: Open → In Progress → Effectiveness Check Pendin
 | Open | CAPA created; no actions started |
 | In Progress | Corrective and preventive actions underway |
 | Effectiveness Check Pending | Actions complete; waiting to verify they worked |
-| Closed | Actions complete and effectiveness verified |
+| Closed | Actions complete and effectiveness check performed |
 
 ### 4.6 Effectiveness check
 
