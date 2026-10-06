@@ -1,3 +1,4 @@
+# Data Dictionary: GMP Audit Findings
 ## 1. Overview
 This is a synthetic dataset for **Meridian Pharma**, a fictional pharmaceutical
 company with **5 manufacturing sites**. It covers audits conducted from
