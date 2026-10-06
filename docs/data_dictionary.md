@@ -34,6 +34,16 @@ One row per manufacturing site.
 | product_type | text | | Sterile Injectables, Oral Solid Dose, API |
 | region | text | | North America, Europe, Asia |
 
+#### Site list
+
+| site_id | site_name | product_type | region |
+|---|---|---|---|
+| S01 | Raleigh, NC | Sterile Injectables | North America |
+| S02 | San Juan, PR | Oral Solid Dose | North America |
+| S03 | Cork, Ireland | API | Europe |
+| S04 | Basel, Switzerland | Sterile Injectables | Europe |
+| S05 | Hyderabad, India | Oral Solid Dose | Asia |
+
 ### 3.2 audits
 One row per audit conducted at a site.
 
@@ -59,8 +69,8 @@ One row per finding raised during an audit.
 | description | text | | Free-text finding statement |
 | prior_occurrence_count | integer | derived | Prior findings of the same category at the same site within 730 days |
 | is_recurrent | boolean | derived | True if prior_occurrence_count ≥ 1 |
-| risk_score | number | derived | 0–100, calculated in Phase 3 |
-| risk_tier | text | derived | High, Medium, Low |
+| risk_score | number | derived | 0–100. Combines severity, recurrence, process area, and CAPA status, following the ICH Q9(R1) idea of risk = probability × severity. Exact formula and weights defined in Phase 3. |
+| risk_tier | text | derived | High, Medium, Low, assigned from risk_score cut-offs. Cut-off values defined in Phase 3. |
 
 ### 3.4 capas
 One row per CAPA. Each finding has exactly one CAPA.
