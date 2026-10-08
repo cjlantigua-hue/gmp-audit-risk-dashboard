@@ -39,3 +39,15 @@ the same item at the same site within 730 days.
 categories are cited at every site constantly. This made the flag meaningless and hid
 the link between failed CAPAs and repeat findings. Judging on the specific item
 mirrors how auditors identify true repeat observations.
+
+## D7: Risk score = Impact × Exposure
+**Decision:** Score each finding as Impact (severity × area criticality) times
+Exposure (CAPA status, overdue, recurrence), each 1–10. Tiers: High ≥ 40,
+Medium 15–39.9, Low < 15, set from anchor scenarios (e.g., every open Critical
+is High; no Minor is High) that the notebook checks automatically.
+
+**Why:** Multiplying all four factors directly compressed scores into 0–30.
+Impact × Exposure mirrors familiar QA risk matrices and ICH Q9's severity ×
+probability. Recurrence is ignored once a CAPA is verified effective, so
+resolved history does not crowd out active risk. A sensitivity test showed the
+top 20 active findings stay stable (16–20 of 20) under single-weight changes.
