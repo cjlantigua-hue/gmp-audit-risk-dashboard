@@ -72,9 +72,9 @@ One row per finding raised during an audit.
 | description | text | | Free-text finding statement |
 | prior_occurrence_count | integer | derived | Prior findings of the same category on the same affected item at the same site within 730 days |
 | is_recurrent | boolean | derived | True if prior_occurrence_count ≥ 1 |
-| risk_score | number | derived | 0–100. Combines severity, recurrence, process area, and CAPA status, following the ICH Q9(R1) idea of risk = probability × severity. Exact formula and weights defined in Phase 3. |
-| risk_tier | text | derived | High, Medium, Low, assigned from risk_score cut-offs. Cut-off values defined in Phase 3. |
-
+   | risk_score | number | derived | 0–100. Impact × Exposure (see rule 5.8) |
+   | risk_tier | text | derived | High (≥ 40), Medium (15–39.9), Low (< 15) |
+   
 ### 3.4 capas
 One row per CAPA. Each finding has exactly one CAPA.
 
@@ -229,6 +229,25 @@ For every CAPA: `open_date` ≥ audit date, and `close_date` (if present) ≥
 
 Rules 5.5–5.7 are also used as **data quality checks** after the synthetic
 data is generated (Phase 2).
+
+### 5.8 Risk score
+Risk score = **Impact × Exposure**, each on a 1–10 scale, following the
+ICH Q9(R1) idea of risk as severity × probability.
+
+**Impact** (capped at 10) = severity points × process-area criticality
+- Severity points: Critical 10, Major 5, Minor 2
+- Area criticality: Production, Laboratory Controls, Quality System 1.0;
+  Facilities & Equipment 0.9; Materials, Packaging & Labeling 0.8
+- × 1.2 for Production and Facilities & Equipment at sterile sites
+
+**Exposure** (capped at 10) = status points + overdue points + recurrence points
+- Status points: Open 6, In Progress 5, Effectiveness Check Pending 3,
+  Closed with failed check 5, Closed with passed check 1
+- Overdue: +3
+- Recurrence: +1 per prior occurrence (max +3); not applied when the CAPA
+  closed and passed its effectiveness check
+
+Weights are design assumptions, stored in `models/risk_weights.json`.
 
 ## 6. Generated dataset
 
