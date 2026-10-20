@@ -1,0 +1,5 @@
+streamlit>=1.50
+pandas
+joblib
+# Must match the scikit-learn version printed in Section 11 of 04_ml_model (your Colab version):
+scikit-learn==1.9.1
