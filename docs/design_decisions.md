@@ -51,3 +51,22 @@ Impact × Exposure mirrors familiar QA risk matrices and ICH Q9's severity ×
 probability. Recurrence is ignored once a CAPA is verified effective, so
 resolved history does not crowd out active risk. A sensitivity test showed the
 top 20 active findings stay stable (16–20 of 20) under single-weight changes.
+
+
+## D8: ML target is recurrence, not overdue CAPAs
+**Decision:** Predict whether a finding recurs on the same item within 12
+months, using only information available when the finding is logged, with a
+time-based train/test split (train Oct 2023–Dec 2024, test Jan–Sep 2025).
+
+**Why:** An overdue-CAPA model reached only ROC-AUC 0.65, since the synthetic
+data plants lateness mainly by site. The recurrence model reached ROC-AUC 0.84
+and answers a more useful question: which CAPAs need deeper root-cause work.
+It beats a prior-occurrence baseline (0.815) only slightly; this is reported
+openly as a limitation.
+
+## D9: Separate overdue and closed-late flags
+**Decision:** `is_overdue` covers only open CAPAs past due; CAPAs closed
+after their due date are flagged separately as `closed_late`.
+
+**Why:** QA leadership needs to see what is late right now. Combining
+both would inflate the active overdue count with already-resolved items.
