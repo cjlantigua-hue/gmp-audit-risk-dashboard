@@ -1,0 +1,34 @@
+{
+  "severity_points": {
+    "Critical": 10,
+    "Major": 5,
+    "Minor": 2
+  },
+  "area_criticality": {
+    "Production": 1.0,
+    "Laboratory Controls": 1.0,
+    "Quality System": 1.0,
+    "Facilities & Equipment": 0.9,
+    "Materials": 0.8,
+    "Packaging & Labeling": 0.8
+  },
+  "sterile_boost": 1.2,
+  "sterile_boost_areas": [
+    "Production",
+    "Facilities & Equipment"
+  ],
+  "status_points": {
+    "Open": 6,
+    "In Progress": 5,
+    "Effectiveness Check Pending": 3,
+    "Closed - Fail": 5,
+    "Closed - Pass": 1
+  },
+  "overdue_points": 3,
+  "recurrence_points_per_prior": 1,
+  "recurrence_points_max": 3,
+  "tier_cutoffs": {
+    "High": 40,
+    "Medium": 15
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "model": "Logistic regression",
+  "target": "Same problem cited again on the same item at the same site within 12 months",
+  "features": [
+    "site_name",
+    "process_area",
+    "category",
+    "severity",
+    "audit_type",
+    "product_type",
+    "prior_occurrence_count",
+    "description"
+  ],
+  "categories": {
+    "site_name": [
+      "Basel, Switzerland",
+      "Cork, Ireland",
+      "Hyderabad, India",
+      "Raleigh, NC",
+      "San Juan, PR"
+    ],
+    "process_area": [
+      "Facilities & Equipment",
+      "Laboratory Controls",
+      "Materials",
+      "Packaging & Labeling",
+      "Production",
+      "Quality System"
+    ],
+    "category": [
+      "Annual product review incomplete",
+      "Batch record documentation (GDP)",
+      "Change control deficiency",
+      "Complaint handling deficiency",
+      "Component testing / supplier qualification",
+      "Computerized system / data integrity",
+      "Environmental monitoring",
+      "Equipment calibration / maintenance",
+      "Equipment cleaning / cleaning validation",
+      "Facility maintenance",
+      "In-process control deficiency",
+      "Inadequate OOS investigation",
+      "Inadequate QC unit oversight",
+      "Inadequate deviation investigation",
+      "Ineffective CAPA",
+      "Lab instrument calibration",
+      "Label control / reconciliation",
+      "Laboratory records / data integrity",
+      "Line clearance deficiency",
+      "Material storage and handling",
+      "Method validation deficiency",
+      "Procedures not followed",
+      "Stability program deficiency",
+      "Training deficiency"
+    ],
+    "severity": [
+      "Critical",
+      "Major",
+      "Minor"
+    ],
+    "audit_type": [
+      "Corporate",
+      "Internal",
+      "Regulatory"
+    ],
+    "product_type": [
+      "API",
+      "Oral Solid Dose",
+      "Sterile Injectables"
+    ]
+  },
+  "threshold": 0.807,
+  "test_metrics": {
+    "roc_auc": 0.837,
+    "pr_auc": 0.901,
+    "baseline_prior_only_roc_auc": 0.815
+  },
+  "train_period": "2023-10-09 to 2024-12-24",
+  "test_period": "2025-01-01 to 2025-09-29",
+  "sklearn_version": "1.6.1"
+}
