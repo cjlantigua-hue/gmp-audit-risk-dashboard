@@ -88,7 +88,7 @@ Flagging the top half of new findings catches **69%** of problems that recur, wi
 
 ![Model curves](figures/07_model_curves.png)
 
-### 6. Recurrence predictor app ([Streamlit](STREAMLIT_APP_URL))
+### 6. Recurrence predictor app ([Streamlit](https://gmp-recurrence-predictor.streamlit.app/))
 Enter a new finding and get its chance of recurrence, a flag for deeper root-cause analysis, its initial risk score, and a "what if" chart showing how repeat history changes the prediction.
 
 ## Repository structure
@@ -134,4 +134,4 @@ A fixed random seed (42) makes every run produce identical data and results. To 
 
 ---
 
-**Author:** Carlos Lantigua · [LinkedIn](LINKEDIN_URL) · [Tableau Public](https://public.tableau.com/app/profile/carlos.lantigua4534)
+**Author:** Carlos Lantigua · [LinkedIn](https://www.linkedin.com/in/carlos-lantigua-62002471/?isSelfProfile=true) · [Tableau Public](https://public.tableau.com/app/profile/carlos.lantigua4534)
