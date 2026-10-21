@@ -2,7 +2,7 @@
 
 **A risk-scoring dashboard and ML model that help pharmaceutical QA leadership decide where to focus inspection-readiness work.**
 
-[**▶ Live dashboard (Tableau Public)**](https://public.tableau.com/app/profile/carlos.lantigua4534/viz/GMPAuditFindingsRiskDashboard/1_Overview) · [**▶ Live recurrence predictor (Streamlit)**](STREAMLIT_APP_URL) · [Data dictionary](docs/data_dictionary.md) · [Design decisions](docs/design_decisions.md)
+[**▶ Live dashboard (Tableau Public)**](https://public.tableau.com/app/profile/carlos.lantigua4534/viz/GMPAuditFindingsRiskDashboard/1_Overview) · [**▶ Live recurrence predictor (Streamlit)**](https://gmp-recurrence-predictor.streamlit.app/) · [Data dictionary](docs/data_dictionary.md) · [Design decisions](docs/design_decisions.md)
 
 > **All data is synthetic.** It describes *Meridian Pharma*, a fictional company with 5 manufacturing sites, generated with deliberately planted patterns (documented below). No real company data was used.
 
